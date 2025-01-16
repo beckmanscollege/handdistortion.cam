@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <title>SYNTH</title>
+</head>
+<body>
+
+
+    <!-- The webcam video (hidden if you want) -->
+
+  
+    <!-- Load MediaPipe libraries from CDN -->
+
+
+
+    <div class="video-wrapper">
+      <video id="backVideo" playsinline autoplay muted loop poster>
+        <source src="video/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  <div class="container">
+    
+
+
+      <video class="input_video" style="display:none;"></video>
+
+    <!-- Canvas for drawing the hand landmarks and camera feed -->
+    <canvas class="output_canvas" width="640" height="480"></canvas>
+
+    <div class="title">hand distortion</div>
+
+    <div class="buttonRack">
+      <button id="toggleDrums">Drums</button>
+      <button id="startButton">Synth</button>
+      <button id="toggleBass">Bass</button>
+    </div>
+
+    
+    
+    
+  <div class="lightButton"></div>
+  
+  <a href="https://ilovemy3.shoes/" class="right-link">NEXT </a>
+  <a href="https://ilovemy3.shoes/" class="left-link">PREVIOUS </a>
+  <!-- A button to start the synth -->
+
+</div>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/tone"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+
+  <!-- Load Tone.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/tone@latest/build/Tone.js"></script>
+
+  <!-- Load our main script (the order matters: after the libraries) -->
+  
+  <script src="script4.js"></script>
+  <script src="script3.js"></script>
+  <script src="video.js"></script>
+  
+  
+</body>
+</html>
